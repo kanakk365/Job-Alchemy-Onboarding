@@ -59,7 +59,7 @@ export function ExperienceDetails() {
   }, []);
 
   return (
-    <div className="flex items-center justify-center min-h-screen p-4 sm:p-6">
+    <div className="flex items-center justify-center p-4 sm:h-10 h-full sm:p-6 m-auto">
       <div className="w-full max-w-[1000px] bg-white rounded-xl shadow-2xl p-4 sm:p-6 lg:p-8 relative overflow-hidden">
      
         <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-blue-50 opacity-50" />
@@ -72,7 +72,7 @@ export function ExperienceDetails() {
           className="max-w-2xl mx-auto relative"
         >
       
-          <div className="mb-4 sm:mb-6">
+          <div className="mb-2 sm:mb-6">
             <div className="relative h-2 w-full bg-indigo-100/50 rounded-full">
               <motion.div
                 className="absolute left-0 top-0 h-full bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full"
@@ -90,7 +90,7 @@ export function ExperienceDetails() {
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-700 mb-1 sm:mb-2 text-center">
             Chronicle Your Journey
           </h1>
-          <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 text-center">
+          <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-8 text-center">
             Share your mystical experiences and achievements
           </p>
 
@@ -219,7 +219,7 @@ export function ExperienceDetails() {
           </div>
 
        
-          <div className="mt-6 sm:mt-8 flex justify-center px-4">
+          <div className="mt-0 sm:mt-8 flex justify-center px-4">
             <Button
               onClick={handleNext}
               disabled={!formData.company || !formData.role}
